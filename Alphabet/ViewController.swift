@@ -6,8 +6,12 @@
 //
 
 import UIKit
+//import AVFoundation
+import MediaPlayer
 
 class ViewController: UIViewController {
+    
+    var player: AVPlayer!
     
     @IBAction func a(_ sender: UIButton) {
         showAnimal(image: "а1")
@@ -39,6 +43,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playSaveSound()
     }
     
     private func showAnimal(image name: String) {
@@ -47,6 +52,13 @@ class ViewController: UIViewController {
         initialData.imageAnimal.image = UIImage(named: name)
         
         self.show(initialData, sender: initialData)
+    }
+    
+    func playSaveSound(){
+        
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "11", ofType: "mp3")!))
+
+        player.play()
     }
 }
 

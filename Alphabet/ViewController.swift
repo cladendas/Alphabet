@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playSaveSound()
+//        playSaveSound()
     }
     
     private func showAnimal(image name: String) {

@@ -289,6 +289,9 @@
                                     <constraint firstAttribute="height" constant="59" id="qLK-cR-72v"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="я"/>
+                                <connections>
+                                    <segue destination="b3H-Ny-iqY" kind="show" id="iZR-En-gFG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiC-fX-nJZ">
                                 <rect key="frame" x="20" y="44" width="59" height="59"/>
@@ -406,6 +409,46 @@
             </objects>
             <point key="canvasLocation" x="1684" y="1192"/>
         </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="IOu-D4-HRJ">
+            <objects>
+                <viewController storyboardIdentifier="AnimationViewController" id="b3H-Ny-iqY" customClass="AnimationViewController" customModule="Alphabet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKL-Ke-2CL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="кролик1" translatesAutoresizingMaskIntoConstraints="NO" id="K1m-mc-lHV">
+                                <rect key="frame" x="87" y="78" width="240" height="371"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="кошка1" translatesAutoresizingMaskIntoConstraints="NO" id="q3J-5d-FJ9">
+                                <rect key="frame" x="87" y="532" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kVP-al-KCB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hNm-TS-k42"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q3J-5d-FJ9" firstAttribute="top" secondItem="K1m-mc-lHV" secondAttribute="bottom" constant="83" id="Bmy-WI-3Ar"/>
+                            <constraint firstItem="K1m-mc-lHV" firstAttribute="leading" secondItem="hNm-TS-k42" secondAttribute="leading" constant="87" id="GXx-2H-kPJ"/>
+                            <constraint firstItem="q3J-5d-FJ9" firstAttribute="leading" secondItem="hNm-TS-k42" secondAttribute="leading" constant="87" id="LVZ-EG-aSp"/>
+                            <constraint firstItem="hNm-TS-k42" firstAttribute="trailing" secondItem="K1m-mc-lHV" secondAttribute="trailing" constant="87" id="Pbw-P9-Yuw"/>
+                            <constraint firstItem="hNm-TS-k42" firstAttribute="trailing" secondItem="q3J-5d-FJ9" secondAttribute="trailing" constant="87" id="Te8-Wm-dID"/>
+                            <constraint firstItem="K1m-mc-lHV" firstAttribute="top" secondItem="hNm-TS-k42" secondAttribute="top" constant="78" id="ZEf-3g-tO6"/>
+                            <constraint firstItem="hNm-TS-k42" firstAttribute="bottom" secondItem="q3J-5d-FJ9" secondAttribute="bottom" constant="56" id="sgY-uj-uOK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yaz-oA-I60"/>
+                    <connections>
+                        <outlet property="cat" destination="q3J-5d-FJ9" id="8ao-7h-Ac2"/>
+                        <outlet property="rabbit" destination="K1m-mc-lHV" id="un1-To-ERO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJ6-z8-MEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397.1014492753625" y="1872.554347826087"/>
+        </scene>
     </scenes>
     <resources>
         <image name="а" width="240" height="240"/>
@@ -420,6 +463,8 @@
         <image name="и" width="240" height="240"/>
         <image name="й-1" width="240" height="240"/>
         <image name="к" width="240" height="240"/>
+        <image name="кошка1" width="372" height="180"/>
+        <image name="кролик1" width="312" height="371"/>
         <image name="л" width="240" height="240"/>
         <image name="м" width="240" height="240"/>
         <image name="н" width="240" height="240"/>
@@ -441,6 +486,9 @@
         <image name="э" width="240" height="240"/>
         <image name="ю" width="240" height="240"/>
         <image name="я" width="240" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -15,6 +15,7 @@
 		6A89FCA7268A6E1A002DD289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A89FCA5268A6E1A002DD289 /* LaunchScreen.storyboard */; };
 		6A8D0CD0269A4FC900B4D66F /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D0CCF269A4FC900B4D66F /* AnimalsViewController.swift */; };
 		6A8D0CD2269A73B700B4D66F /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D0CD1269A73B700B4D66F /* 11.mp3 */; };
+		6A8D0CD4269C6E6A00B4D66F /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D0CD3269C6E6A00B4D66F /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6A89FCA8268A6E1A002DD289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A8D0CCF269A4FC900B4D66F /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		6A8D0CD1269A73B700B4D66F /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
+		6A8D0CD3269C6E6A00B4D66F /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				6A89FC9C268A6E13002DD289 /* SceneDelegate.swift */,
 				6A89FC9E268A6E13002DD289 /* ViewController.swift */,
 				6A8D0CCF269A4FC900B4D66F /* AnimalsViewController.swift */,
+				6A8D0CD3269C6E6A00B4D66F /* AnimationViewController.swift */,
 				6A89FCA0268A6E13002DD289 /* Main.storyboard */,
 				6A89FCA3268A6E1A002DD289 /* Assets.xcassets */,
 				6A89FCA5268A6E1A002DD289 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				6A89FC9F268A6E13002DD289 /* ViewController.swift in Sources */,
 				6A89FC9B268A6E13002DD289 /* AppDelegate.swift in Sources */,
+				6A8D0CD4269C6E6A00B4D66F /* AnimationViewController.swift in Sources */,
 				6A8D0CD0269A4FC900B4D66F /* AnimalsViewController.swift in Sources */,
 				6A89FC9D268A6E13002DD289 /* SceneDelegate.swift in Sources */,
 			);

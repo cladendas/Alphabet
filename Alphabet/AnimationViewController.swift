@@ -11,6 +11,7 @@ class AnimationViewController: UIViewController {
 
     @IBOutlet weak var rabbit: UIImageView!
     @IBOutlet weak var cat: UIImageView!
+    @IBOutlet weak var alligator: UIImageView!
     
     let imagesRabbit = [
         UIImage(named: "кролик1")!,
@@ -63,6 +64,12 @@ class AnimationViewController: UIViewController {
         UIImage(named: "кошка37")!,
     ]
     
+    let imagesAlligator = [
+        UIImage(named: "а1")!,
+        UIImage(named: "аллигатор2")!,
+        UIImage(named: "аллигатор3")!
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -83,6 +90,10 @@ class AnimationViewController: UIViewController {
         let animateCat = UIImage.animatedImage(with: imagesCat, duration: 1.9)
         
         cat.image = animateCat
+        
+        let animateAlligator = UIImage.animatedImage(with: imagesAlligator, duration: 1)
+        
+        alligator.image = animateAlligator
     }
 
 }

@@ -11,13 +11,14 @@ class AnimalsViewController: UIViewController {
     
     var imageAnimal: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
         
     }()
     
     override func viewWillLayoutSubviews() {
+        print(view.frame)
         setlayout()
     }
     
